@@ -1,180 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title data-i18n="title">VerboHerb - Natural Vegan Toner</title>
-    
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FYGSBCF9TY"></script>
+
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-FYGSBCF9TY"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-FYGSBCF9TY');
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-FYGSBCF9TY");
     </script>
-    
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <meta name="description" content="Discover VerboHerb, your vegan herbal toner for naturally radiant skin. Crafted with local Croatian herbs and eco-friendly packaging.">
-    <meta property="og:title" content="VerboHerb - Natural Vegan Toner">
-    <meta property="og:description" content="Discover VerboHerb, your vegan herbal toner for naturally radiant skin. Crafted with local Croatian herbs and eco-friendly packaging.">
-    <meta property="og:image" content="1.png">
-    <meta property="og:url" content="https://verboherb.com">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="VerboHerb - Natural Vegan Toner">
-    <meta name="twitter:description" content="Discover VerboHerb, your vegan herbal toner for naturally radiant skin. Crafted with local Croatian herbs and eco-friendly packaging.">
-    <meta name="twitter:image" content="1.png">
-    <link rel="icon" type="image/png" href="verb.png">
-</head>
-<body>
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "1206892384098508");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1206892384098508&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="description"
+      content="Discover VerboHerb, your vegan herbal toner for naturally radiant skin. Crafted with local Croatian herbs and eco-friendly packaging."
+    />
+    <meta property="og:title" content="VerboHerb - Natural Vegan Toner" />
+    <meta
+      property="og:description"
+      content="Discover VerboHerb, your vegan herbal toner for naturally radiant skin. Crafted with local Croatian herbs and eco-friendly packaging."
+    />
+    <meta property="og:image" content="1.png" />
+    <meta property="og:url" content="https://verboherb.com" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="VerboHerb - Natural Vegan Toner" />
+    <meta
+      name="twitter:description"
+      content="Discover VerboHerb, your vegan herbal toner for naturally radiant skin. Crafted with local Croatian herbs and eco-friendly packaging."
+    />
+    <meta name="twitter:image" content="1.png" />
+    <link rel="icon" type="image/png" href="verb.png" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="logo" data-i18n="brandName">VerboHerb</div>
-            <div class="language-toggle">
-                <button id="lang-en" class="active">EN</button> |
-                <button id="lang-hr">HR</button>
-            </div>
-        </nav>
+      <nav>
+        <div class="logo" data-i18n="brandName">VerboHerb</div>
+        <div class="language-toggle">
+          <button id="lang-en" class="active">EN</button> |
+          <button id="lang-hr">HR</button>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section id="hero">
-            <div class="hero-content">
-                <h1 data-i18n="heroTitle">Naturally Radiant Skin Awaits</h1>
-                <p data-i18n="heroSubtitle">Discover VerboHerb, your vegan herbal toner for a fresh, balanced glow.</p>
-                <button class="cta-button" data-i18n="heroCta">Shop Now</button>
-            </div>
-            <div class="hero-image">
-                <!-- Placeholder for product image -->
-                <img src="1.png" alt="Glass bottle of VerboHerb vegan herbal toner with green label">
-            </div>
-        </section>
+      <section id="hero">
+        <div class="hero-content">
+          <h1 data-i18n="heroTitle">Naturally Radiant Skin Awaits</h1>
+          <p data-i18n="heroSubtitle">
+            Discover VerboHerb, your vegan herbal toner for a fresh, balanced
+            glow.
+          </p>
+          <button class="cta-button" data-i18n="heroCta">Shop Now</button>
+        </div>
+        <div class="hero-image">
+          <img
+            src="1.png"
+            alt="Glass bottle of VerboHerb vegan herbal toner with green label"
+          />
+        </div>
+      </section>
 
-        <!-- Benefits Section -->
-        <section id="benefits">
-            <h2 data-i18n="benefitsTitle">Why You'll Love VerboHerb</h2>
-            <div class="benefits-grid">
-                <div class="benefit-item">
-                    <h3 data-i18n="benefit1Title">Purely Vegan</h3>
-                    <p data-i18n="benefit1Desc">Crafted with 100% plant-based ingredients.</p>
-                </div>
-                <div class="benefit-item">
-                    <h3 data-i18n="benefit2Title">Plastic-Free</h3>
-                    <p data-i18n="benefit2Desc">Sustainable packaging for a healthier planet.</p>
-                </div>
-                <div class="benefit-item">
-                    <h3 data-i18n="benefit3Title">Local Ingredients</h3>
-                    <p data-i18n="benefit3Desc">Sourced responsibly from Croatian nature.</p>
-                </div>
-                <div class="benefit-item">
-                    <h3 data-i18n="benefit4Title">For All Skin Types</h3>
-                    <p data-i18n="benefit4Desc">Gentle and effective, even for sensitive skin.</p>
-                </div>
-            </div>
-        </section>
+      <section id="benefits">
+        <h2 data-i18n="benefitsTitle">Why You'll Love VerboHerb</h2>
+        <div class="benefits-grid">
+          <div class="benefit-item">
+            <h3 data-i18n="benefit1Title">Purely Vegan</h3>
+            <p data-i18n="benefit1Desc">
+              Crafted with 100% plant-based ingredients.
+            </p>
+          </div>
+          <div class="benefit-item">
+            <h3 data-i18n="benefit2Title">Plastic-Free</h3>
+            <p data-i18n="benefit2Desc">
+              Sustainable packaging for a healthier planet.
+            </p>
+          </div>
+          <div class="benefit-item">
+            <h3 data-i18n="benefit3Title">Local Ingredients</h3>
+            <p data-i18n="benefit3Desc">
+              Sourced responsibly from Croatian nature.
+            </p>
+          </div>
+          <div class="benefit-item">
+            <h3 data-i18n="benefit4Title">For All Skin Types</h3>
+            <p data-i18n="benefit4Desc">
+              Gentle and effective, even for sensitive skin.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <!-- About Section -->
-        <section id="about">
-            <h2 data-i18n="aboutTitle">Our Commitment</h2>
-            <p data-i18n="aboutDesc">VerboHerb was born from a love for nature and a desire for clean, effective skincare. We are dedicated to sustainability, using locally sourced Croatian herbs and eco-friendly packaging. Our mission is to bring you the best of nature, bottled with care.</p>
-        </section>
+      <section id="about">
+        <h2 data-i18n="aboutTitle">Our Commitment</h2>
+        <p data-i18n="aboutDesc">
+          VerboHerb was born from a love for nature and a desire for clean,
+          effective skincare. We are dedicated to sustainability, using locally
+          sourced Croatian herbs and eco-friendly packaging. Our mission is to
+          bring you the best of nature, bottled with care.
+        </p>
+      </section>
 
-        <!-- Testimonials Section -->
-        <section id="testimonials">
-            <h2 data-i18n="testimonialsTitle">What Our Customers Say</h2>
-            <div class="testimonial-container">
-                <div class="testimonial">
-                    <p class="quote" data-i18n="testimonial1Quote">"My skin has never felt so balanced and refreshed! Love that it's local and vegan."</p>
-                    <p class="author" data-i18n="testimonial1Author">- Ana K., Zagreb</p>
-                </div>
-                <div class="testimonial">
-                    <p class="quote" data-i18n="testimonial2Quote">"Finally, a toner that's gentle yet effective. The sustainable packaging is a huge plus!"</p>
-                    <p class="author" data-i18n="testimonial2Author">- Ivana P., Split</p>
-                </div>
-                 <div class="testimonial">
-                    <p class="quote" data-i18n="testimonial3Quote">"Obsessed with this toner! It smells amazing and makes my skin glow. Highly recommend!"</p>
-                    <p class="author" data-i18n="testimonial3Author">- Petra M., Rijeka</p>
-                </div>
-            </div>
-        </section>
+      <section id="testimonials">
+        <h2 data-i18n="testimonialsTitle">What Our Customers Say</h2>
+        <div class="testimonial-container">
+          <div class="testimonial">
+            <p class="quote" data-i18n="testimonial1Quote">
+              "My skin has never felt so balanced and refreshed! Love that it's
+              local and vegan."
+            </p>
+            <p class="author" data-i18n="testimonial1Author">
+              - Ana K., Zagreb
+            </p>
+          </div>
+          <div class="testimonial">
+            <p class="quote" data-i18n="testimonial2Quote">
+              "Finally, a toner that's gentle yet effective. The sustainable
+              packaging is a huge plus!"
+            </p>
+            <p class="author" data-i18n="testimonial2Author">
+              - Ivana P., Split
+            </p>
+          </div>
+          <div class="testimonial">
+            <p class="quote" data-i18n="testimonial3Quote">
+              "Obsessed with this toner! It smells amazing and makes my skin
+              glow. Highly recommend!"
+            </p>
+            <p class="author" data-i18n="testimonial3Author">
+              - Petra M., Rijeka
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <!-- Newsletter Section -->
-        <section id="newsletter">
-            <h2 data-i18n="newsletterTitle">Get 10% Off Your First Order!</h2>
-            <p data-i18n="newsletterDesc">Sign up for our newsletter for exclusive offers and skincare tips.</p>
-            <form id="newsletter-form" name="newsletter" data-netlify="true" action="/thank-you.html">
-                <!-- Add a hidden input for Netlify -->
-                <input type="hidden" name="form-name" value="newsletter" />
-                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
-                <button type="submit" class="cta-button" data-i18n="newsletterSubmit">Subscribe</button>
-            </form>
-            <p id="newsletter-feedback" class="form-feedback"></p> <!-- Added feedback area -->
-        </section>
+      <section id="newsletter">
+        <h2 data-i18n="newsletterTitle">Get 10% Off Your First Order!</h2>
+        <p data-i18n="newsletterDesc">
+          Sign up for our newsletter for exclusive offers and skincare tips.
+        </p>
+        <form
+          id="newsletter-form"
+          name="newsletter"
+          data-netlify="true"
+          action="/thank-you.html"
+        >
+          <input type="hidden" name="form-name" value="newsletter" />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="your.email@example.com"
+            required
+          />
+          <button type="submit" class="cta-button" data-i18n="newsletterSubmit">
+            Subscribe
+          </button>
+        </form>
+        <p id="newsletter-feedback" class="form-feedback"></p>
+      </section>
     </main>
 
     <footer>
-        <div class="footer-content">
-            <div class="footer-nav">
-                <a href="privacy.html" data-i18n="footerPrivacy">Privacy Policy</a> <!-- Updated link -->
-                <a href="#" data-i18n="footerContact">Contact Us</a>
-            </div>
-            <div class="social-icons">
-                <!-- Inline SVG Placeholders -->
-                <a href="#" aria-label="Instagram">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon">
-                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                    </svg>
-                </a>
-                <a href="https://www.tiktok.com/@verboherb" target="_blank" rel="noopener" aria-label="TikTok">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon">
-                        <path d="M16.5 6.5a4.5 4.5 0 1 0-9 0 4.5 4.5 0 0 0 9 0Z"></path>
-                        <path d="M12 16.5V6.5C12 4 14 2 16.5 2"></path>
-                        <path d="M7.5 16.5c0 2.5 2 4.5 4.5 4.5S16.5 19 16.5 16.5"></path>
-                    </svg>
-                </a>
-                <a href="https://www.youtube.com/channel/UCJx76Biln4bVJT2Z43sIDQQ" target="_blank" rel="noopener" aria-label="YouTube">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon">
-                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                        <polygon points="10,8 16,12 10,16 10,8" fill="currentColor"/>
-                    </svg>
-                </a>
-            </div>
-            <div class="footer-lang-toggle">
-                 <span data-i18n="footerLanguage">Language:</span>
-                 <button id="footer-lang-en">EN</button> |
-                 <button id="footer-lang-hr">HR</button>
-            </div>
+      <div class="footer-content">
+        <div class="footer-nav">
+          <a href="privacy.html" data-i18n="footerPrivacy">Privacy Policy</a>
+          <a href="#" data-i18n="footerContact">Contact Us</a>
         </div>
-        <p class="copyright">&copy; <span id="current-year"></span> VerboHerb. <span data-i18n="footerRights">All rights reserved.</span></p>
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram">
+            <!-- Instagram SVG -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="social-icon"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a
+            href="https://www.tiktok.com/@verboherb"
+            target="_blank"
+            rel="noopener"
+            aria-label="TikTok"
+          >
+            <!-- TikTok SVG -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="social-icon"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M16.5 6.5a4.5 4.5 0 1 0-9 0 4.5 4.5 0 0 0 9 0Z"></path>
+              <path d="M12 16.5V6.5C12 4 14 2 16.5 2"></path>
+              <path d="M7.5 16.5c0 2.5 2 4.5 4.5 4.5S16.5 19 16.5 16.5"></path>
+            </svg>
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCJx76Biln4bVJT2Z43sIDQQ"
+            target="_blank"
+            rel="noopener"
+            aria-label="YouTube"
+          >
+            <!-- YouTube SVG -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="social-icon"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <polygon points="10,8 16,12 10,16 10,8" fill="currentColor" />
+            </svg>
+          </a>
+        </div>
+        <div class="footer-lang-toggle">
+          <span data-i18n="footerLanguage">Language:</span>
+          <button id="footer-lang-en">EN</button> |
+          <button id="footer-lang-hr">HR</button>
+        </div>
+      </div>
+      <p class="copyright">
+        &copy; <span id="current-year"></span> VerboHerb.
+        <span data-i18n="footerRights">All rights reserved.</span>
+      </p>
     </footer>
 
     <script src="script.js"></script>
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "VerboHerb Vegan Herbal Toner",
-      "image": "1.png",
-      "description": "Discover VerboHerb, your vegan herbal toner for naturally radiant skin. Crafted with local Croatian herbs and eco-friendly packaging.",
-      "brand": {
-        "@type": "Brand",
-        "name": "VerboHerb"
-      },
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "EUR",
-        "price": "19.99",
-        "availability": "https://schema.org/InStock"
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "VerboHerb Vegan Herbal Toner",
+        "image": "1.png",
+        "description": "Discover VerboHerb, your vegan herbal toner for naturally radiant skin. Crafted with local Croatian herbs and eco-friendly packaging.",
+        "brand": {
+          "@type": "Brand",
+          "name": "VerboHerb"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "EUR",
+          "price": "19.99",
+          "availability": "https://schema.org/InStock"
+        }
       }
-    }
     </script>
-</body>
+  </body>
 </html>
