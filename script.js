@@ -31,6 +31,10 @@ document.addEventListener('DOMContentLoaded', () => {
             footerContact: "Contact Us",
             footerLanguage: "Language:",
             footerRights: "All rights reserved.",
+            // Thank you page translations
+            thankYouTitle: "Thank You!",
+            thankYouMessage: "Thank you for subscribing to our newsletter. You'll receive your 10% discount code via email shortly.",
+            backHome: "Back to Home",
             // Added Privacy Page Translations
             privacyTitle: "Privacy Policy - VerboHerb",
             privacyContent: `
@@ -107,6 +111,10 @@ document.addEventListener('DOMContentLoaded', () => {
             footerContact: "Kontaktirajte Nas",
             footerLanguage: "Jezik:",
             footerRights: "Sva prava pridržana.",
+            // Thank you page translations
+            thankYouTitle: "Hvala Vam!",
+            thankYouMessage: "Hvala vam što ste se pretplatili na naš newsletter. Uskoro ćete putem e-maila dobiti kod za 10% popusta.",
+            backHome: "Nazad na Početnu",
             // Added Privacy Page Translations
             privacyTitle: "Pravila Privatnosti - VerboHerb",
             privacyContent: `
@@ -242,25 +250,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (newsletterForm && newsletterFeedback) {
         newsletterForm.addEventListener('submit', (event) => {
-            event.preventDefault(); // Prevent actual form submission
+            // Allow the form to submit naturally to Netlify
+            // No event.preventDefault() - let Netlify handle the submission
             const emailInput = document.getElementById('email');
-            const currentLang = document.documentElement.lang || 'hr'; // Get current language
+            const currentLang = document.documentElement.lang || 'hr';
 
             console.log(`Newsletter signup attempt: ${emailInput.value}`);
-            // Here you would typically send the email to a server
-
-            // Display feedback message
-            const feedbackMessage = currentLang === 'hr'
-                ? 'Hvala na prijavi!'
-                : 'Thank you for subscribing!';
-            newsletterFeedback.textContent = feedbackMessage;
-
-            emailInput.value = ''; // Clear the input
-
-            // Optional: Clear the message after a few seconds
-            setTimeout(() => {
-                newsletterFeedback.textContent = '';
-            }, 5000); // Clear after 5 seconds
+            
+            // Show a brief loading message
+            const loadingMessage = currentLang === 'hr'
+                ? 'Šalje se...'
+                : 'Submitting...';
+            newsletterFeedback.textContent = loadingMessage;
         });
     }
 });

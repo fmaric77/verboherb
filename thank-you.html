@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - VerboHerb</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="verb.png">
+    <meta name="robots" content="noindex">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo-link">
+                <img src="verb.png" alt="VerboHerb Logo" class="logo">
+            </a>
+            <div class="language-toggle">
+                <button id="lang-en" class="active">EN</button> |
+                <button id="lang-hr">HR</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="content-page">
+        <section style="text-align: center; padding: 4rem 2rem;">
+            <h1 data-i18n="thankYouTitle">Thank You!</h1>
+            <p data-i18n="thankYouMessage">Thank you for subscribing to our newsletter. You'll receive your 10% discount code via email shortly.</p>
+            <a href="index.html" class="cta-button" data-i18n="backHome">Back to Home</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-nav">
+                <a href="privacy.html" data-i18n="footerPrivacy">Privacy Policy</a>
+                <a href="#" data-i18n="footerContact">Contact Us</a>
+            </div>
+            <div class="social-icons">
+                <a href="#" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+                <a href="#" aria-label="TikTok">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon">
+                        <path d="M16.5 6.5a4.5 4.5 0 1 0-9 0 4.5 4.5 0 0 0 9 0Z"></path>
+                        <path d="M12 16.5V6.5C12 4 14 2 16.5 2"></path>
+                        <path d="M7.5 16.5c0 2.5 2 4.5 4.5 4.5S16.5 19 16.5 16.5"></path>
+                    </svg>
+                </a>
+                <a href="https://www.youtube.com/channel/UCJx76Biln4bVJT2Z43sIDQQ" target="_blank" rel="noopener" aria-label="YouTube">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <polygon points="10,8 16,12 10,16 10,8" fill="currentColor"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="footer-lang-toggle">
+                <span data-i18n="footerLanguage">Language:</span>
+                <button id="footer-lang-en">EN</button> |
+                <button id="footer-lang-hr">HR</button>
+            </div>
+        </div>
+        <p class="copyright">&copy; <span id="current-year"></span> VerboHerb. <span data-i18n="footerRights">All rights reserved.</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
